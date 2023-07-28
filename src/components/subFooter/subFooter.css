@@ -1,0 +1,25 @@
+.end_content {
+ background: red;
+ display: none;
+width: 100%;
+ height: 300px;
+}
+.straight_line{
+   height: 2px;
+   width: 100%;
+   background-color: black;
+ ;
+
+}
+@media screen and (max-width : 1024px) {
+ .end_content{
+    position: relative;
+    top: -3em;
+ }
+ .end_text{
+    font-size: small;
+ }
+    }
+    @media screen and (max-width : 600px) {
+     
+    }

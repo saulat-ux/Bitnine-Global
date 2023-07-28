@@ -1,0 +1,510 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    letter-spacing: 0.3px;
+    z-index: 100;
+}
+
+.main__search{
+    
+}
+.my_sidebar {
+    display: none;
+}
+
+.main__container{
+    display: flex;
+    gap: 1.5rem;
+    top: 0;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 35px;
+    color: #808080;
+    background: #fafafa;
+  
+}
+.main__container a {
+    text-decoration: none;
+    color: #666666;
+}
+.main__container span{
+    
+}
+.nav_bar a {
+    transition: color 0.3s;
+}
+.nav_bar a:nth-child(1){
+    color: #fac433;
+}
+.nav_bar a:hover{
+    color: #fac433;
+}
+
+.nav__socials{ 
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.3rem;
+    margin-top: 5px;
+    right: 10px;
+}
+.nav__socials a{
+    color: #666666;
+    background-size: 100% 200%;
+    background: #fff;
+    background-size: 100% 200%;
+    background-position: 0% 100%;
+    transition: background-position 0.3s , color 0.3s;
+    
+}
+.nav__socials a:nth-child(1){
+    background-image: linear-gradient(rgb(0, 0, 0) 50% , #fff 50%);
+    color: #fac433;
+    
+}
+.nav__socials a:nth-child(2){
+    background-image: linear-gradient(rgb(235, 39, 169) 50% , #fff 50%);
+    
+}
+.nav__socials a:nth-child(3){
+    background-image: linear-gradient(rgb(247, 0, 0) 50% , #fff 50%);
+    
+}
+.nav__socials a:nth-child(4){
+    background-image: linear-gradient(rgb(17, 185, 236) 50% , #fff 50%);
+    
+}
+.nav__socials a:nth-child(5){
+    background-image: linear-gradient(rgba(0, 132, 240, 0.897) 50% , #fff 50%);
+    
+}
+.nav__socials a:nth-child(6){
+    background-image: linear-gradient(rgb(68, 0, 255) 50% , #fff 50%);
+    
+}
+.nav__socials a:nth-child(7){
+    background-image: linear-gradient(rgb(2, 145, 21) 50% , #fff 50%);
+    
+}
+.nav__socials a:hover{
+    background-position: 0% 0%;
+    color:#fff;
+}
+ .search__button{
+   width: 50px;
+   height: 50px;
+   background-color: rgb(163 153 153 / 17%);
+   position: absolute;
+   top: 0;
+   bottom: 0;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  right: 10px;
+  border-radius: 0.5rem;
+  transition: transform 0.6s cubic-bezier(.9, 0, .3, .9);
+ 
+ }
+ .search__icon,
+ .search__close{
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    transition: opacity 0.5s cubic-bezier(.9,0,.3,.9);
+ }
+ .search__close{
+    opacity: 0;
+ }
+ .search__input{
+    
+    border: none;
+    outline: none;
+    width: calc(100% - 23px);
+    height: 100%;
+    border-radius: 0.5rem;
+    padding-left: 8px;
+    font-size: small;
+    font-family: 500;
+    opacity: 0;
+    pointer-events: none;;
+    transition: opacity 1.5s;
+   background-color: rgb(159 132 132 / 17%);
+
+  }
+  /* animation */
+  .show-search{
+   width: 12% !important;
+
+  }
+
+  .main__search{
+    position: relative;
+    width: 60px;
+    background-color: rgba(0,0,0,0.4);
+    height: 45px;
+    border-radius: 0.5rem;
+    
+    right: 4rem;
+    padding: 3px;
+    overflow: hidden;
+    transition: width .5s cubic-bezier(.9,0,.3,.9);
+   
+  }
+  
+  .show-search .search__input{
+    opacity: 1;
+    pointer-events: initial;
+  }
+  .show-search .search__button{
+    transform: rotate(90deg);
+  }
+  .show-search .search__icon{
+    opacity: 0;
+  }
+  .show-search .search__close{
+    opacity: 1;
+  }
+  .section-bar{
+    position: absolute;
+    left: 10rem;
+    padding: 10px;
+    border-radius: 0.2rem;
+    padding-right: 10px;
+    background: #ece9e9;
+    z-index: 2;
+    outline: 0;
+    bottom: 8.2rem;
+
+  }
+
+.main_cta{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    background: white;
+    line-height: 90px;
+
+ 
+}
+.main_cta a{
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+
+.image img{
+    position: absolute;
+    right: 60rem;
+    width: 235px;
+    height: inherit;
+    left: 2rem;
+    top: 6rem;
+}
+.nav_bar {
+    display: flex;
+    font-weight: 500;
+    font-size: large;
+    position: relative;
+   right:  2rem;
+   gap: 1.5rem;
+  
+   
+}
+.nav_bar a {
+    color: #666666;
+}
+.first_image img{
+ height: 40px;
+ width: 100%;
+}
+.first_image{
+    height: 40px;
+}
+.initial_text {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 2.2rem;
+}
+.initial_text a{
+    text-decoration: none;
+    color: white ;
+
+    
+}
+.mini_navbar{
+    display: none;
+}
+.navigation_bar{
+    display: none;
+}
+.navigation_bar{
+    width: 100%;
+    height: 100%;
+  
+}
+
+.nav_element{
+    position: relative;
+    bottom: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 43rem;
+    text-align: center;
+    border: 1px solid rgb(241, 241, 241);
+    
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .06) inset;
+    background: #fff
+}
+.nav_element a {
+    text-decoration: none;
+   padding: 1rem;
+   color:#3d3b3b;
+}
+.arrow {
+    transform: rotate(90deg);
+    position: relative;
+    right: 1rem;
+    font-size: larger;
+    font-weight: 700;
+   
+}
+  .arrow_1{
+    display: none;
+  }
+  .inner_div{
+    display: none;
+  }
+
+@media screen and (max-width : 1024px) {
+    .inner_div{
+        background: #3d3b3b;
+        height: 0;
+        position: absolute;
+        transition: 0.3s;
+    } 
+    .sequence {
+        z-index: 100;
+    }
+    .inner_nav_elements{
+        display: flex;
+        align-items: center;
+        height: 45px;
+        font-size: small;
+        gap: 43rem;
+        opacity: 0;
+       transition: 0.5s;
+    }
+ .inner_div.active {
+    height: 90px;
+ }
+ .inner_div.active .inner_nav_elements{
+    opacity: 1;
+ }
+    .main_cta{
+        height: 0;
+        position: absolute;
+        top: 96px;
+        left: 0;
+        right: 0;
+        left: 19px;
+        width: 95vw;
+        background: #fff;
+        transition: 0.3s;
+        /* opacity: 0; */
+    }
+    .main_cta .nav_bar  {
+      
+        width: fit-content;
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+        transition: 0.3s; 
+           opacity: 0;   
+        
+    }
+    .main_cta.active{
+        
+        height: 800px;
+        
+       
+    }
+    .main_cta.active .nav_bar {
+        opacity: 1;
+    }
+   
+    .arrow_1{
+        display: block;
+      }
+    .nav_bar a{
+        height: 10px;
+       
+    }
+    /* .main_cta .nav_bar{
+        display: flex;
+        
+        
+        
+    } */
+    .sequence{
+        display: flex;
+       gap: 42rem;
+       height: 50px;
+       align-items: center;
+       box-shadow: 0 1px 0 rgba(0,0,0,.06) inset;
+       
+    }
+    .first_image{
+        position: relative;
+        top:-4rem
+    }
+    .navigation_bar{
+        display: none;
+    }
+    .main__header{
+        position: relative;
+        bottom: 4rem;
+    }
+    
+    .mini_navbar{
+        display: block;
+        max-width: fit-content;
+        position: relative;
+        top: -7rem;
+        right: -48rem;
+        font-size: xx-large;
+        
+    }
+    .mini_navbar a {
+        color: #3d3b3b;
+    }
+    .main__container {
+        display: none;
+
+    }
+     /* .main_cta{
+        display: none;
+    }  */
+    .main_cta .image{
+        display: none;
+    }
+ 
+    header {
+       height: 40px;
+    }
+    .section-bar{
+        position: relative;
+    padding: 10px;
+    border-radius: 0.2rem;
+    padding-right: 10px;
+    background: #ece9e9;
+    z-index: 2;
+    outline: 0;
+        top: 4.8rem;
+        left: 22.5rem;
+    }
+    .first_content {
+        position: relative;
+        bottom: 2.5rem;
+    }
+    .image img {
+        width: 193px;
+        background: white;
+        top:0rem;
+    }
+    .bitnine-logo{
+        
+        width: 820px;
+        height: 60px;
+        background: white;
+        position: relative;
+        top: -4rem;
+        
+    }
+    .section-part{
+        width: 820px;
+        height: 100px;
+        background: white;
+    }
+    .main__header {
+        padding-top: 100px;
+    }
+    .nav_bar{
+        display: none;
+    }
+ 
+
+}
+@media screen and (max-width : 600px) {
+
+    .nav_bar{
+        display: none;
+    }
+ 
+    .main_cta .nav_bar {
+      
+        width: -moz-fit-content;
+        width: fit-content;
+        position: relative;
+        top: 1rem;
+        transition: 0.2s;
+        left: 25rem;
+        opacity: 0; 
+    }
+    .mini_navbar{
+        z-index: 100;
+    }
+    .main_cta {
+        width: 98vw;
+        height: 0;
+    }
+    .arrow_1 {
+        display: block;
+        position: relative;
+        right: 26rem;
+    }
+   .first_image{
+    position: relative;
+    left: 0rem;
+    width: 25rem;
+   }
+ 
+ .initial_text {
+    
+    display: flex;
+    justify-content: center;
+ }
+ .initial_text a{
+    text-align: center;
+    font-size: 13px;
+    display: inline-block;
+ }
+ .image img{
+    width:135px
+ }
+ .bitnine-logo{
+    position: relative;
+    left: -1rem;
+    top: -3rem;
+ }
+ .mini_navbar{
+    position: relative;
+    left: 22rem;
+ }
+ .section-part{
+    position: relative;
+    left: -10rem;
+ }
+.section-part select{
+    height: 20px;
+    padding: 0rem;
+}
+
+}

@@ -1,0 +1,49 @@
+.main_experience {
+    width: 100%;
+    height: 100%;
+    background: rgb(243, 246, 251);
+
+}
+.sub_experience {
+    margin-top: 7rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    height: 962px;
+    
+}
+.image_content {
+    margin-top: 8rem;
+}
+.image_content img{
+   width: 900px;
+   height: 752;
+}
+
+@media screen and (max-width : 1024px) {
+    .main_experience{
+        width: 820px;
+        height: 836px;
+       
+    }
+    .image_content img{
+        width: 750px;
+        height: 626.66px;
+    }
+    }
+    @media screen and (max-width : 600px) {
+        .main_experience{
+            width: 390px;
+            height: 502px;
+            margin-top: -8rem;
+        }
+        .image_content img{
+            width: 350px;
+            height: 292px;
+            top: -5rem;
+            position: relative;
+        }
+      
+    }

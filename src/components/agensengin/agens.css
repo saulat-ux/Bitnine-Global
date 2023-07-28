@@ -1,0 +1,127 @@
+.agens_main {
+    background: rgb(243, 246, 251);
+ width: 100%;
+}
+ .sub_contentText h2{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    line-height: 1.1;
+    
+    
+}
+.sub_contentText strong {
+    font-weight: 700;
+    color: #000;
+    margin-top: 4rem;
+    
+}
+.sub_contentText h5{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    text-decoration: underline;
+    margin-top: 1em;
+
+}.sub_contentText p{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+} 
+.bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    margin-top: 2em;
+}
+.bar_1{
+    width: 350px;
+    height: 192px;
+    position: relative;
+    background-color: white;
+    box-shadow: rgb(229, 229, 229) 1px 1px 3px 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 16px;
+    border-color: rgb(255 255 255);
+    transition: all 1000ms ease 0s;
+    margin: 0px;
+   
+    
+}
+.the_image {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+    
+   
+}
+.the_image img{
+    width: 237.98px;
+    height: 161px;
+    margin-top: 1rem;
+
+}
+
+.list_text {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   opacity: 0;
+    font-size:small;
+    line-height: 1.5;
+    transition: opacity 2s ease;
+}
+.bar_1:hover > .list_text{
+    opacity: 1;
+   
+}
+.bar_1:hover {
+    border-color: blue;
+}
+.bar_1:hover > .the_image{
+    opacity: 0;
+}
+ul li, ol li {
+    margin: 0 0 0.5rem;
+}
+.agens_main{
+    height: 34rem;
+}
+
+.sub_contentText p{
+    text-align: center;
+ }
+@media screen and (max-width : 1024px) {
+ .agens_main{
+    position: relative;
+    top:35rem;
+    
+}
+.sub_contentText p{
+    text-align: center;
+ }
+
+}
+    @media screen and (max-width : 600px) {
+     
+ .bars{
+    display: flex;
+    flex-direction: column;
+ }
+ .sub_contentText p{
+    text-align: center;
+ }
+ .agens_main {
+    position: relative;
+    margin-top: -14rem;
+ }
+    }
